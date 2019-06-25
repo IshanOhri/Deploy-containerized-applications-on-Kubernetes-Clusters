@@ -1,0 +1,6 @@
+1. Install linux virtual machine(ubuntu) using VMware on your local machine.
+2. Install Docker on you linux machine.
+3. Create images or pull from local/DockerHub Repository.
+4. Create containers and deploy on Kubernetes cluster.
+5. Build and test code using Continous Integration tool Jenkins.
+6. Kubernetes Clusters - Mini Kube, Cloud kuberenetes Clusters such as Google cloud, Amazon, Azure.
