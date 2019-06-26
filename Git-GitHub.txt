@@ -21,5 +21,37 @@ D. Link local repository to remote repository
      2. Pull all the files from central repository to local repository using command below:
         git pull origin master
      
+E. Push the file from Local Repository to Central Repository
+     1. Create file in your workplace.
+     2. a. There’s an intermediate space that resides in between your workspace and local repository. 
+        b. When you want to commit any changes in the local repository, you must add those files in the index first. This is the layer                between your workspace and local repository.
+        c. If the file is not in index, you cannot make any changes to the repository.
+     3. Type git status command to check the files that are not added in index.
+     4. To add file to Index use command: git add file_name.txt
+     5. Now we need to commit the file/changes to local repository. For that use command: git commit -m "commit_message"
+     6. If you want to add all the files to Index at once, use command: git add -A
+     7. For committing all the files in the Index at once, use command: git commit -a -m "commit message"
+     8. git log - use this command to check how commits are stored.
+     9. If your file is already in the Index and you modified it later, you can directly use git commit -a - m "" command.
+     
+     
+ F. Create Branches in local repository
+    1. git branch branch_name  ---- command to create new branch
+    2. git checkout branch_name ----- command to switch to particular branch
+    3. ls - use this command to list out all files in the branch
+    4. The changes will be present in this branch only, not in master branch
+    
+
+ G. Merging Branches
+    1. Make sure you are in branch in which you want to merge it.
+    2. Use command: git merge branch_name
+    3. Use cat filename.extension command to see what file actually contains
+    
+
+    
+    
+    
+    
+     
       
  
