@@ -1,5 +1,20 @@
-1. Install Git tool Gitbash on your windows machine.
-2. Configure Git username and email in your GitBash.
-   git config --global user.name "<your name>"
-   git config --global user.email "<your email>"
-3. To see all configuration details in GitBash, use command: git config --list
+A. Install GitBash On windows OS
+
+     1. Install Git tool Gitbash on your windows machine.
+     2. Configure Git username and email in your GitBash.
+            git config --global user.name "<your name>"
+            git config --global user.email "<your email>"
+     3. To see all configuration details in GitBash, use command: git config --list
+   
+B. Create remote repository on GitHub - Already created
+
+C. Create Local repository on your local machine
+
+     1. Create a folder where you want your project to be stored.
+     2. Right click and select GitBash - it'll open gitbash emulator.
+     3. Type in commans gitinit - initialize empty git repository in that folder.
+ 
+D. Link local repository to remote repository
+     1. In order to connect them we need to add origin(we are calling remote here origin)
+        command: git remote add origin <link of your central repository>
+ 
