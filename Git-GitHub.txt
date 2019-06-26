@@ -1,0 +1,5 @@
+1. Install Git tool Gitbash on your windows machine.
+2. Configure Git username and email in your GitBash.
+   git config --global user.name "<your name>"
+   git config --global user.email "<your email>"
+3. To see all configuration details in GitBash, use command: git config --list
