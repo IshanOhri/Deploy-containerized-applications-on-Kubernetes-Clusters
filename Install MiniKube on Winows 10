@@ -1,0 +1,11 @@
+
+***************************************************What is MiniKube?*************************************************************
+
+    1. Minikube is the best option to learn Kubernetes on your personal computer. 
+    2. It is the easiest and most recommended way to run an All-in-One Kubernetes cluster locally.
+    3. So without expensive infrastructure, you can work with Kubernetes clusters using Mnikube from your workstation.
+    
+*******************************************Perequisites for installing Minikube**************************************************
+
+    1. kubectl: it is a command line interface for running commands against Kubernetes clusters.
+    2. Some hypervisor like VirtualBox or Hyper-V should be installed on the computer.
