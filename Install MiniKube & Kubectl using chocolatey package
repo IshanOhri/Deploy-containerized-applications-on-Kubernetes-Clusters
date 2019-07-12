@@ -1,0 +1,24 @@
+
+**********************************  Install MiniKube & Kubectl using chocolatey package  *******************************************
+
+1. Install kubectl cli:  choco install kubernetes-cli
+
+2. Install Minikube: choco install minikube
+
+3. Check Minikuber version installed on machine: minikube version
+
+4. Check available version of Kubernetes: minikube get-k8s-versions
+
+5. Update Minikube: minikube update-check
+
+6. Run Minikube: minikube start
+
+7. Start Minikube and suggest to use virtual box specifically: minikube start --vm-driver=virtualbox
+
+So for the first time, Minikube will download needed ISO images and start the Minikube virtual machine.To check the status of Minikube 
+minikube status can be executed. If Minikube works fine the output of the command will be like below.
+
+minikube: Running
+cluster: Running
+kubectl: Correctly Configured: pointing to minikube-vm at 192.168.99.100
+
