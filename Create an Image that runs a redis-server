@@ -1,0 +1,15 @@
+1. Create a new working directroy ----> mkdir redis-image.
+2. Change into that directory ----> cd redis-image
+3. Open any code editor.
+4. Create a docker_file inside the redis-image.
+
+            # Use an existing docker image as a base
+            FROM alpine
+            # Download and install a dependency
+            RUN apk add --update redis
+            # Tell the image what to do when it starts as a conatiner
+            CMD ["redis-server"]
+            
+5. Save it and open terminal and execute command "docker build ."inside the redis-image directory.
+6. You get an Image id.
+7. Use command docker run 23bd89b79517 to create the conatiner.
