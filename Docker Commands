@@ -1,0 +1,65 @@
+Docker Basic Commands
+
+Basic
+
+docker version
+docker -v  --------> Check the version of docker
+docker info
+docker --help
+docker login
+
+Images
+
+docker images --help -------------> gives the usage of the docker images command.
+docker pull image_name------------> Pull images from the docker hub.
+docker pull <image_name:tag> -----> Particular tag images can be pulled using this command otherwise the latest tag images will be pulled.
+docker images --------------------> List out all the images on the system.
+docker images -a -----------------> List all the images available on your system.
+docker images -f------------------> Filter flag in which you can provide some filter.
+
+Example -  sudo docker images -f "dangling=false"
+           dangling images are the images which are associated with the conatiners or running conatiners.
+		 
+Example -  sudo docker images -f "dangling=false" - q
+           Show us the images Id's which are not associated with the conatiners.
+
+docker images -q -----------------> Quiet falg which gives you only image Id's.
+docker run image_name ------------> Running an image means actually creating container out of images.
+docker rmi
+
+
+Containers
+
+docker ps --help ------> will list out all the sub options under this command.
+docker ps -------------> shows the running conatiners in the system.
+docker ps --all--------> shows all the conatiners created till now.
+docker run -it image_name bash --------> used to run the conatiner.
+     it is the interactive mode flag for going inside the conatiners
+	 bash to start an interactive mode. So that we can start the shell.
+	 We can also give the name to this conatiner by using below command
+	 docker run --name MyUbuntu1-it image_name bash 
+	 ls ----> command takes you inside the container system
+docker start
+docker stop
+
+docker run image_name = docker create image_name + docker start conatiner_id ---> docker run command will create and run the conatiner.
+																			 ---> It's a combination of above two commands.
+																			 
+																			 
+docker exec -it <conatiner_id> <command>   ------> execute an additional command in a conatiner.
+                                           ------> the purpose of the IT flag is to get into the container.
+										   ------> exec means run another command.
+										   ------> Reference the docker client.
+										   ------> open shell or terminal in context of your running container. docker exec -it  <conatiner_id> sh
+										   ------> this will take you inside the container and you can run command directly.
+										   ------> We can directly start the shell/terminal while running the image/creating the conatiner.
+										   ------> docker run -it <image_name> sh
+										   ------> this will take you inside the container shell/terminal. Drawback is you cannot run any other process.
+										   
+
+
+System
+
+docker stats
+docker system df
+docker system prune
